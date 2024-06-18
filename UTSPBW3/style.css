@@ -1,0 +1,74 @@
+<style>
+
+.lora-uniquifier {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+header, footer {
+    background-color: #008DDA;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+.container {
+    display: flex; 
+    padding: 5px;
+}
+.left, .right, .center {
+    flex-basis: calc(33.33% - 20px);
+    flex-grow: 1; /* Mengizinkan elemen untuk memperluas dan memenuhi ruang yang tersedia */
+    flex-basis: 0; /* Set ke nol agar elemen dapat memperluas sebanyak mungkin */
+    padding: 20px; /* Menambahkan padding di sekitar elemen */
+    height: 500px;
+}
+
+.left {
+    order: 1;
+    background-color: #41C9E2; 
+    color: rgb(255, 255, 255); 
+    font-size: small; color: white;
+}
+.center {
+    order: 2;
+    background-color: #B3C8CF; 
+    flex-grow: 2; /* Memberikan dua kali lipat ruang kepada elemen tengah */
+    color: black;
+}
+
+
+.right {
+    order: 3;
+    background-color: #41C9E2; /* Menambahkan warna biru untuk bagian kanan */
+    color: white; /* Menambahkan warna teks putih untuk bagian kanan */
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+.center a{
+    text-decoration: none;
+    color: white;
+}
+
+
+</style>

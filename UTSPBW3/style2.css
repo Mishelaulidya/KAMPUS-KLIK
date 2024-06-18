@@ -1,0 +1,107 @@
+<style>
+
+.lora-uniquifier {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+header, footer {
+    background-color: #008DDA;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+.container {
+    display: flex;
+    padding: 5px;
+}
+.left, .right, .center {
+    flex-basis: calc(33.33% - 20px);
+    flex-grow: 1; /* Mengizinkan elemen untuk memperluas dan memenuhi ruang yang tersedia */
+    flex-basis: 0; /* Set ke nol agar elemen dapat memperluas sebanyak mungkin */
+    padding: 20px; /* Menambahkan padding di sekitar elemen */
+    height: 500px;
+}
+
+.left {
+    order: 1;
+    background-color: #41C9E2; /* Menambahkan warna biru untuk bagian kiri */
+    color: rgb(255, 255, 255); /* Menambahkan warna teks putih untuk bagian kiri */
+    font-size: small; color: white;
+}
+.center {
+    order: 2;
+    background-color: rgb(233, 229, 229); /* Menambahkan warna putih untuk bagian tengah */
+    flex-grow: 2; /* Memberikan dua kali lipat ruang kepada elemen tengah */
+    color: rgb(1, 7, 27);
+}
+
+.right {
+    order: 3;
+    background-color: #41C9E2; /* Menambahkan warna biru untuk bagian kanan */
+    color: white; /* Menambahkan warna teks putih untuk bagian kanan */
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.teks-profil {
+    color: rgb(10, 0, 0);
+    font-size: 20px;
+    margin-left: 10px; /* Memberi jarak antara gambar dan teks */
+}
+
+.profil {
+    font-weight: bold; /* Membuat teks profil menjadi tebal */
+    font-size: 24px; /* Ukuran font yang lebih besar untuk teks profil */
+    text-align: center;
+}
+
+.keterangan {
+    font-size: 16px; /* Ukuran font yang lebih kecil untuk kalimat keterangan */
+    max-width: 300px; /* Menyesuaikan lebar maksimum agar tidak melewati batas tepi kanan */
+}
+
+
+.Selanjutnya {
+    font-size: medium; color: blue; text-align: right;
+}
+
+table {
+    width: 100%; /* Lebar tabel penuh */
+    border-collapse: collapse; /* Menggabungkan batas sel */
+}
+th, td {
+    padding: 8px; /* Menambahkan padding ke sel-sel */
+    border: 1px solid black; /* Menetapkan garis batas hitam dengan ketebalan 1px */
+}
+th {
+    background-color: #696767; /* Warna latar belakang untuk sel header */
+    font-style: normal; color: #ffffff;
+}
+td {
+    background-color: #ffffff; /* Warna latar belakang untuk sel data */
+}
+
+</style>
